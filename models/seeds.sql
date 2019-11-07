@@ -1,0 +1,2 @@
+USE animals_db;
+INSERT INTO Lost_Animals (animal_name, species, breed, picture, color, animal_description, lost_at, lost_where, still_lost, contact_email, createdAt, updatedAt) VALUES ("max", "dog", "husky", "image.jpeg", "black and white and big eyes", "very small", "2019-11-05", "Riverside", TRUE, "contact@gmail.com", 0, 0);
