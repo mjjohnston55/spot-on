@@ -1,3 +1,58 @@
-.list-group-item {
-  line-height: 2.5;
+body {
+    background-image: url("./images/white2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+   
+  }
+#title{
+    background-color: #DF8E23 ; 
+} 
+
+.container-fluid {
+    padding:3% 15%;
+}
+h1 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
+    color: whitesmoke;
+} 
+h3 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: black;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-weight: 200;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: whitesmoke;
+}
+.icon {
+    color: #DF8E23;
+    margin-bottom: 1rem;
+    
+}
+.icon:hover {
+    color: #ff4c68;
+  }
+#features {
+    padding: 7.1% 15%;
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.white {
+    font-family: 'Ubuntu';
+   
+    color: grey;
 }
