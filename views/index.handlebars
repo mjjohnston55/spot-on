@@ -43,7 +43,7 @@
     </div>
 
         <div class="hurt col-lg-6">
-      <img src="../public/styles/images/find dog.jpeg" alt="fnd my dog">
+      <img src="/styles/images/find dog.jpeg" alt="fnd my dog">
     </div>
 
     </div>
@@ -84,71 +84,52 @@
 
     <div class="container">
         <h2>Lost Animal Form</h2>
-        <form class="form-horizontal" action="/action_page.php">
+        <form class="form-horizontal" method="POST" action="/Lost_Animals/create">
+         <label class="control-label col-sm-2">Animal Name:</label>
+         <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="Enter Name" name="name">
+            </div>
           <div class="form-group">
             <label class="control-label col-sm-2" for="email">Email:</label>
             <div class="col-sm-10">
               <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
             </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Species:</label>
-            <div class="col-sm-10">          
-              <input type="password" class="form-control" id="pwd" placeholder="Enter species" name="pwd">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Breed:</label>
+            <label class="control-label col-sm-2">Species:</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="email" placeholder="Enter breed" name="email">
+              <input type="text" class="form-control" placeholder="Enter Species" name="species">
             </div>
           </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Color:</label>
-            <div class="col-sm-10">          
-              <input type="password" class="form-control" id="pwd" placeholder="Enter color" name="pwd">
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Description:</label>
+            <label class="control-label col-sm-2">Breed:</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="email" placeholder="Enter description" name="email">
+              <input type="text" class="form-control" placeholder="Enter breed" name="breed">
             </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="pwd">Lost At:</label>
+            <label class="control-label col-sm-2">Color:</label>
             <div class="col-sm-10">          
-              <input type="password" class="form-control" id="pwd" placeholder="Enter lost at" name="pwd">
+              <input type="text" class="form-control" placeholder="Enter color" name="color">
             </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label col-sm-2" for="email">Lost Where:</label>
+            <label class="control-label col-sm-2">Description:</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="email" placeholder="lost where" name="email">
+              <input type="text" class="form-control" placeholder="Enter description" name="description">
             </div>
-          </div>
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroupFileAddon01">Picture</span>
+            <label class="control-label col-sm-2" >Lost When</label>
+            <div class="col-sm-10">          
+              <input type="date" class="form-control" placeholder="Enter lost at" name="date">
             </div>
-            <div class="custom-file">
-              <input type="file" class="custom-file-input" id="inputGroupFile01"
-                aria-describedby="inputGroupFileAddon01">
-              <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+            <label class="control-label col-sm-2" >Zip Code</label>
+            <div class="col-sm-10">          
+              <input type="text" class="form-control" placeholder="Zip Code" name="zip  ">
             </div>
-          </div>
-          <div class="form-group">        
-            <div class="col-sm-offset-2 col-sm-10">
-              <div class="checkbox">
-                <label><input type="checkbox" name="remember"> Remember me</label>
-              </div>
+            <label class="control-label col-sm-2">Lost Where (City)</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="lost where" name="where">
             </div>
-          </div>
-          <div class="form-group">        
+            <label class="control-label col-sm-2">Picture</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="Photo Url" name="picture">
+            </div>   
             <div class="col-sm-offset-2 col-sm-10">
               <button type="submit" class="btn btn-danger">Submit</button>
             </div>
-          </div>
         </form>
       </div>
 

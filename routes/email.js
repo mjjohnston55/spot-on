@@ -1,4 +1,5 @@
-var nodemailer = require('nodemailer');
+module.exports = function(app){
+  var nodemailer = require('nodemailer');
 
 var transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -10,7 +11,7 @@ var transporter = nodemailer.createTransport({
 
 var mailOptions = {
   from: 'spotsanimal@gmail.com',
-  to: 'spotsanimal@yahoo.com',
+  to: 'spotsanimal@gmail.com',
   subject: 'Sending Email using Node.js',
   text: 'Test'
 };
@@ -22,3 +23,4 @@ transporter.sendMail(mailOptions, function(error, info){
     console.log('Email sent: ' + info.response);
   }
 });
+}
