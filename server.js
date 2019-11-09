@@ -26,6 +26,8 @@ app.set("view engine", "handlebars");
 // Routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
+// TODO - setup export functionality for email so we can actually send values
+require("./routes/email")(app);
 
 var syncOptions = { force: false };
 
