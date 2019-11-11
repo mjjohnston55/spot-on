@@ -56,3 +56,80 @@ h3 {
    
     color: grey;
 }
+
+
+/*Phils CSS */
+.petName {
+    font-family: 'McLaren', cursive;
+}
+
+li {
+    list-style-type:none;
+    font-family: 'Federo', sans-serif;
+}
+
+.petContainer {
+    border:2px solid #343a40;
+     padding:10px; 
+     background-color: #df8e23;
+    color:white;
+    border-radius: 25px;
+}
+
+.resultsContainer {
+    background-color: #e1d1d1;
+    width:60%;
+    padding:20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.petPic {
+    width:175px;
+     height:175px;
+     border-radius: 25px;
+}
+
+b {
+    font-family: 'Fredericka the Great', cursive;
+    font-weight: lighter;
+    font-size: 120%;
+    color: #343a40
+}
+
+ul  {
+    padding-left:0px;
+    
+}
+
+.main {
+    text-align:center;
+    background-color:#e1d1d1;
+}
+
+.listTop {
+    padding-top:10px;
+}
+
+.orange {
+    background-color: #DF8E23;
+}
+
+.nav-link {
+    color: rgba(255,255,255,.5) !important;
+}
+
+
+
+/*Zoom hover effect */
+.zoom {
+    transition: transform .2s; /* Animation */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+/* End zoom section */
