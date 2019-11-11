@@ -6,6 +6,25 @@ module.exports = function(app) {
       res.render("index");
   });
 
+  
+  app.get("/foundresults", function(req, res) {
+    db.Found_Animals.findAll({}).then(function(dbExamples) {
+    
+      res.render("foundresults", {
+        animals : dbExamples
+      });
+    });
+  });
+
+  app.get("/lostresults", function(req, res) {
+    db.Lost_Animals.findAll({}).then(function(dbExamples) {
+    
+      res.render("lostresults", {
+        animals : dbExamples
+      });
+    });
+  });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {
