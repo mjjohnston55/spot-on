@@ -4,7 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   
+   overflow-x: hidden;
   }
 #title{
     background-color: #DF8E23 ; 
@@ -120,7 +120,66 @@ ul  {
     color: rgba(255,255,255,.5) !important;
 }
 
-
+/*Joseph Form CSS */
+.lostFormPicture {
+    margin: 2%;
+    padding: 2%;
+    background: black;
+    border: solid 4px #DF8E23;
+    height: 100%;
+    width: 100%;
+}
+.top {
+    background-color: #DF8E23; 
+    border-top: solid 20px rgb(211, 130, 24);
+}
+.bottom {
+    background-color: #DF8E23; 
+    margin-top: 2%;
+    border-top: solid 20px rgb(211, 130, 24);
+    text-align: center;
+    font-size: 1rem;
+}
+form {
+    background: whitesmoke;
+}
+label {
+    font-size: 1rem;
+    padding: 10px 0px;
+}
+.formTitle {
+    font-size: 3rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+    background: rgb(255, 162, 39); 
+    border: solid 1px black;
+}
+.submit {
+    width: 60%;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+.link {
+    font-size: 1.5rem;
+    margin-top: 8%;
+}
+.topnav {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 7%;
+    height: 100%;
+}
+.topnav:hover {
+    color: lightgreen;
+}
+a:link, a:visited, a:focus {
+    text-decoration: none;
+}
+.step {
+    font-size: 4rem;
+}
 
 /*Zoom hover effect */
 .zoom {

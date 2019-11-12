@@ -14,6 +14,10 @@ module.exports = function(app) {
     res.render("foundForm");
   });
   
+  app.get("/WhatWeDo", function(req, res){
+    res.render("WhatWeDo");
+  });
+  
   app.get("/foundresults", function(req, res) {
     db.Found_Animals.findAll({}).then(function(dbExamples) {
       res.render("foundresults", {
