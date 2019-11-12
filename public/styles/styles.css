@@ -103,13 +103,12 @@ ul  {
     
 }
 
-.main {
-    text-align:center;
-    background-color:#e1d1d1;
-}
-
 .listTop {
     padding-top:10px;
+}
+.main {
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .orange {
@@ -180,7 +179,25 @@ a:link, a:visited, a:focus {
 .step {
     font-size: 4rem;
 }
-
+/*Custom Scroll */
+.main::-webkit-scrollbar {
+  width: 10px;
+}
+  
+/* Track */
+.main::-webkit-scrollbar-track {
+  background: none;
+}
+  
+/* Handle */
+.main::-webkit-scrollbar-thumb {
+  background: black;
+}
+  
+/* Handle on hover */
+.main::-webkit-scrollbar-thumb:hover {
+   background: #555;
+}
 /*Zoom hover effect */
 .zoom {
     transition: transform .2s; /* Animation */
