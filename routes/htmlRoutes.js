@@ -6,10 +6,16 @@ module.exports = function(app) {
       res.render("index");
   });
 
+  app.get("/lostForm", function(req, res) {
+    res.render("lostForm");
+  });
+
+  app.get("/foundForm", function(req, res) {
+    res.render("foundForm");
+  });
   
   app.get("/foundresults", function(req, res) {
     db.Found_Animals.findAll({}).then(function(dbExamples) {
-    
       res.render("foundresults", {
         animals : dbExamples
       });
@@ -18,7 +24,6 @@ module.exports = function(app) {
 
   app.get("/lostresults", function(req, res) {
     db.Lost_Animals.findAll({}).then(function(dbExamples) {
-    
       res.render("lostresults", {
         animals : dbExamples
       });
