@@ -137,6 +137,14 @@ ul {
   text-align: center;
   font-size: 1rem;
 }
+.bottom404 {
+  position: absolute;
+  bottom: 0px;
+  background-color: #df8e23;
+  border-top: solid 20px rgb(211, 130, 24);
+  text-align: center;
+  font-size: 1rem;
+}
 
 form {
     background: whitesmoke;
@@ -233,6 +241,49 @@ a:focus {
 
 .lostLabel {
     font-size: 3rem;
+}
+.foundPet {
+  font-size: 4rem;
+  color: orange;
+  width: 100%;
+  text-shadow: 2px 2px #ff0000;
+  margin-bottom: 2rem;
+}
+.foundPetLink {
+  font-size: 1.5rem;
+  background: rgb(243, 189, 118);
+  color: black;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.catWhat {
+  border: 1px solid rgb(179, 114, 29);
+  padding: 8rem;
+  background-image: url("./images/catWhatWeDo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+.foundPetLink:hover {
+  color: lightgreen;
+}
+.dogWhat {
+  border: 1px solid rgb(179, 114, 29);
+  padding: 8rem;
+  background-image: url("./images/dogWhatWeDo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+.error {
+  background: whitesmoke;
+  border: 1px solid black;
+  margin-top: 30%;
+}
+.errortext {
+  color: black;
 }
 /*Custom Scroll */
 .main::-webkit-scrollbar {
