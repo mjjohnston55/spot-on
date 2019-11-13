@@ -34,6 +34,26 @@ module.exports = function(app) {
     });
   });
 
+  app.get("/Found_Animals/results", function(req,res){
+    db.Found_Animals.findAll({
+      where: {
+        zip_code: req.body.zip //Need to Work ON Query
+      }
+    }).then(function(animalList) {
+      res.render("foundresults", { animals : animalList });
+    });
+  });
+
+  app.get("/Lost_Animals/results", function(req,res){
+    db.Found_Animals.findAll({
+      where: {
+        zip_code: req.body.zip //Need to Work ON Query
+      }
+    }).then(function(animalList) {
+      res.render("lostresults", { animals : animalList });
+    });
+  });
+
   // Load example page and pass in an example by id
   app.get("/example/:id", function(req, res) {
     db.Example.findOne({ where: { id: req.params.id } }).then(function(dbExample) {

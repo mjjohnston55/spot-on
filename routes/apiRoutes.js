@@ -35,6 +35,7 @@ module.exports = function(app) {
       res.json(animals);
     })
   });
+
   // Create a new example
   app.post("/Lost_Animals/create", function(req, res) {
     db.Lost_Animals.create({
