@@ -45,9 +45,14 @@ module.exports = function(app) {
   });
 
   app.get("/Lost_Animals/results", function(req,res){
-    db.Found_Animals.findAll({
+    db.Lost_Animals.findAll({
       where: {
-        zip_code: req.query.zip
+        animal_name: req.query.name,
+        species: req.query.species,
+        breed: req.query.breed,
+        color: req.query.color,
+        zip_code: req.query.zip,
+        lost_where: req.query.where
       }
     }).then(function(animalList) {
       res.render("lostresults", { animals : animalList });
