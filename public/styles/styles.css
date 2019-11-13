@@ -178,8 +178,26 @@ label {
   margin-top: 7%;
   height: 100%;
 }
+.dropnav {
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 2%;
+}
 
-.topnav:hover {
+.dropnav:hover {
+  background:lightgreen;
+}
+
+.dropdown-menu.show {
+  margin-left: 2.5rem !important;
+}
+.dropdown-menu{
+  background: rgb(255, 162, 39);
+  padding: 1rem;
+}
+
+.topnav:hover{
   color: lightgreen;
 }
 

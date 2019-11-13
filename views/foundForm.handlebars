@@ -8,27 +8,34 @@
         </button>
       </nav>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 offset-md-1">
       <a href="/WhatWeDo">
         <h1 class="topnav">What We Do!</h1>
       </a>
     </div>
     <div class="col-md-2">
-      <a href="/SearchList">
-        <h1 class="topnav">Search Our Animals</h1>
-      </a>
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Our Animals
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundresults">View Lost Animals</a>
+           <a class="dropdown-item dropnav" href="/lostresults">View Found Animals</a>
+        </div>
+      </div>
     </div>
     <div class="col-md-2">
-      <a href="/Report">
-        <h1 class="topnav">Report a Lost Animal</h1>
-      </a>
+     <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report an Animal
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundForm">Report Found Animal</a>
+           <a class="dropdown-item dropnav" href="/lostForm">Report Lost Animal</a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-2">
-      <a href="/Rescued">
-        <h1 class="topnav">Our Results!</h1>
-      </a>
-    </div>
-    <div class="col-md-1">
+    <div class="col-md-1 offset-md-1">
       <a class="nav-link link" href="">Contact</a>
     </div>
     <div class="col-md-1">
@@ -39,87 +46,87 @@
 <!-- Found Animal Form -->
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-4">
-            <!--Padding-->
-        </div>
-        <div class="col-md-4">
-             <h2 class="formTitle text-center">Found Animal Form</h2>
-        </div>
-        <div class="col-md-4">
-            <!--Padding-->
-        </div>
+  <div class="row">
+    <div class="col-md-4">
+      <!--Padding-->
     </div>
-    <div class="row">
-        <div class="col-md-3">
-            <img class="lostFormPicture" src="/styles/images/lostCat.jpeg">
-        </div>
-        <div class="col-md-6">
-            <section id="testimonials">
+    <div class="col-md-4">
+      <h2 class="formTitle text-center">Found Animal Form</h2>
+    </div>
+    <div class="col-md-4">
+      <!--Padding-->
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <img class="lostFormPicture" src="/styles/images/lostCat.jpeg">
+    </div>
+    <div class="col-md-6">
+      <section id="testimonials">
         <form class="form-horizontal" method="POST" action="/Lost_Animals/create">
-            <label class="control-label col-sm-12">Animal Name:</label>
+          <label class="control-label col-sm-12">Animal Name:</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" placeholder="Enter Name" name="name">
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-12" for="email">Email:</label>
             <div class="col-sm-12">
-                <input type="text" class="form-control" placeholder="Enter Name" name="name">
+              <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
             </div>
-            <div class="form-group">
-                <label class="control-label col-sm-12" for="email">Email:</label>
-                <div class="col-sm-12">
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
-                </div>
-                <label class="control-label col-sm-12">Species:</label>
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" placeholder="Enter Species" name="species">
-                </div>
-            </div>
-            <label class="control-label col-sm-12">Breed:</label>
+            <label class="control-label col-sm-12">Species:</label>
             <div class="col-sm-12">
-                <input type="text" class="form-control" placeholder="Enter breed" name="breed">
+              <input type="text" class="form-control" placeholder="Enter Species" name="species">
             </div>
-            <label class="control-label col-sm-12">Color:</label>
-            <div class="col-sm-12">
-                <input type="text" class="form-control" placeholder="Enter color" name="color">
-            </div>
-            <label class="control-label col-sm-12">Description:</label>
-            <div class="col-sm-12">
-                <input type="text" class="form-control" placeholder="Enter description" name="description">
-            </div>
-            <label class="control-label col-sm-12">Found When</label>
-            <div class="col-sm-12">
-                <input type="date" class="form-control" placeholder="Enter lost at" name="date">
-            </div>
-            <label class="control-label col-sm-12">Zip Code</label>
-            <div class="col-sm-12">
-                <input type="text" class="form-control" placeholder="Zip Code" name="zip">
-            </div>
-            <label class="control-label col-sm-12">Found Where (City)</label>
-            <div class="col-sm-12">
-                <input type="text" class="form-control" placeholder="lost where" name="where">
-            </div>
-            <label class="control-label col-sm-12">Picture</label>
-            <div class="col-sm-12">
-                <input type="text" class="form-control" placeholder="Photo Url" name="picture">
-            </div>
-            <br>
-            <div class="col-md-3 offset-md-9">
-                <button type="submit" class="btn btn-danger submit">Submit</button>
-            </div>
+          </div>
+          <label class="control-label col-sm-12">Breed:</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" placeholder="Enter breed" name="breed">
+          </div>
+          <label class="control-label col-sm-12">Color:</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" placeholder="Enter color" name="color">
+          </div>
+          <label class="control-label col-sm-12">Description:</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" placeholder="Enter description" name="description">
+          </div>
+          <label class="control-label col-sm-12">Found When</label>
+          <div class="col-sm-12">
+            <input type="date" class="form-control" placeholder="Enter lost at" name="date">
+          </div>
+          <label class="control-label col-sm-12">Zip Code</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" placeholder="Zip Code" name="zip">
+          </div>
+          <label class="control-label col-sm-12">Found Where (City)</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" placeholder="lost where" name="where">
+          </div>
+          <label class="control-label col-sm-12">Picture</label>
+          <div class="col-sm-12">
+            <input type="text" class="form-control" placeholder="Photo Url" name="picture">
+          </div>
+          <br>
+          <div class="col-md-3 offset-md-9">
+            <button type="submit" class="btn btn-danger submit">Submit</button>
+          </div>
         </form>
-    </section>
-        </div>
-        <div class="col-md-3">
-              <img class="lostFormPicture" src="/styles/images/lostDog.jpeg">
-        </div>
-     <div class="container-fluid bottom">
-         <div class="row">
-             <div class="col-md-6 text-right">
-                <footer id="footer">
-                <p>© Copyright 2019 Dude, Wheres My Dog?</p>
-                </footer>
-             </div>
-             <div class="col-md-6 text-left">
-                 <a href="https://github.com/mjjohnston55/Project2" id="repoLink">Github Repository</a>
-             </div>
-         </div>
-     </div>
+      </section>
     </div>
+    <div class="col-md-3">
+      <img class="lostFormPicture" src="/styles/images/lostDog.jpeg">
+    </div>
+    <div class="container-fluid bottom">
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <footer id="footer">
+            <p>© Copyright 2019 Dude, Wheres My Dog?</p>
+          </footer>
+        </div>
+        <div class="col-md-6 text-left">
+          <a href="https://github.com/mjjohnston55/Project2" id="repoLink">Github Repository</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

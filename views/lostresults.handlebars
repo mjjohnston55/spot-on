@@ -8,27 +8,34 @@
         </button>
       </nav>
     </div>
-    <div class="col-md-2">
+    <div class="col-md-2 offset-md-1">
       <a href="/WhatWeDo">
         <h1 class="topnav">What We Do!</h1>
       </a>
     </div>
     <div class="col-md-2">
-      <a href="/SearchList">
-        <h1 class="topnav">Search Our Animals</h1>
-      </a>
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Our Animals
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundresults">View Lost Animals</a>
+           <a class="dropdown-item dropnav" href="/lostresults">View Found Animals</a>
+        </div>
+      </div>
     </div>
     <div class="col-md-2">
-      <a href="/Report">
-        <h1 class="topnav">Report a Lost Animal</h1>
-      </a>
+     <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report an Animal
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundForm">Report Found Animal</a>
+           <a class="dropdown-item dropnav" href="/lostForm">Report Lost Animal</a>
+        </div>
+      </div>
     </div>
-    <div class="col-md-2">
-      <a href="/Rescued">
-        <h1 class="topnav">Our Results!</h1>
-      </a>
-    </div>
-    <div class="col-md-1">
+    <div class="col-md-1 offset-md-1">
       <a class="nav-link link" href="">Contact</a>
     </div>
     <div class="col-md-1">
