@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
         animal_description: { type: DataTypes.TEXT },
         found_date: { type: DataTypes.DATE },
         found_where: { type: DataTypes.TEXT },
-        zip_code: { type:DataTypes.INTEGER, validate: {notEmpty: true}},
+        zip_code: { type:DataTypes.INTEGER },
         contact_email: { type: DataTypes.STRING, validate: {notEmpty: true}},
         });
     return foundAnimals;

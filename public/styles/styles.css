@@ -1,135 +1,250 @@
 body {
-    background-image: url("./images/white2.jpg");
+  background-image: url("./images/white2.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-   
-  }
-#title{
-    background-color: #DF8E23 ; 
-} 
+  overflow-x: hidden;
+}
+#title {
+  background-color: #df8e23;
+}
 
-.container-fluid {
-    padding:3% 15%;
+.container-fluid1 {
+  padding: 3% 15%;
 }
 h1 {
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-    color: whitesmoke;
-} 
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: whitesmoke;
+}
 h3 {
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 2rem;
-    line-height: 1.5;
-    color: black;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: black;
 }
 
 .navbar-brand {
-    font-family: 'Ubuntu';
-    font-weight: 200;
-    font-size: 2rem;
-    line-height: 1.5;
-    color: whitesmoke;
+  font-family: "Ubuntu";
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: whitesmoke;
 }
 .icon {
-    color: #DF8E23;
-    margin-bottom: 1rem;
-    
+  color: #df8e23;
+  margin-bottom: 1rem;
 }
 .icon:hover {
-    color: #ff4c68;
-  }
+  color: #ff4c68;
+}
 #features {
-    padding: 7.1% 15%;
+  padding: 7.1% 15%;
 }
 
 .feature-box {
-    padding: 5%;
+  padding: 5%;
 }
 
 .white {
-    font-family: 'Ubuntu';
-   
-    color: grey;
-}
+  font-family: "Ubuntu";
 
+  color: grey;
+}
 
 /*Phils CSS */
 .petName {
-    font-family: 'McLaren', cursive;
+  font-family: "McLaren", cursive;
 }
 
 li {
-    list-style-type:none;
-    font-family: 'Federo', sans-serif;
+  list-style-type: none;
+  font-family: "Federo", sans-serif;
 }
 
 .petContainer {
-    border:2px solid #343a40;
-     padding:10px; 
-     background-color: #df8e23;
-    color:white;
-    border-radius: 25px;
+  border: 2px solid #343a40;
+  padding: 10px;
+  background-color: #df8e23;
+  color: white;
+  border-radius: 25px;
 }
 
 .resultsContainer {
-    background-color: #e1d1d1;
-    width:60%;
-    padding:20px;
-    margin-left: auto;
-    margin-right: auto;
-    
+  background-color: #e1d1d1;
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .petPic {
-    width:175px;
-     height:175px;
-     border-radius: 25px;
+  width: 175px;
+  height: 175px;
+  border-radius: 25px;
 }
 
 b {
-    font-family: 'Fredericka the Great', cursive;
-    font-weight: lighter;
-    font-size: 120%;
-    color: #343a40
+  font-family: "Fredericka the Great", cursive;
+  font-weight: lighter;
+  font-size: 120%;
+  color: #343a40;
 }
 
-ul  {
-    padding-left:0px;
-    
-}
-
-.main {
-    text-align:center;
-    background-color:#e1d1d1;
+ul {
+  padding-left: 0px;
 }
 
 .listTop {
-    padding-top:10px;
+  padding-top: 10px;
+}
+.main {
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .orange {
-    background-color: #DF8E23;
+  background-color: #df8e23;
 }
 
 .nav-link {
-    color: rgba(255,255,255,.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
+/*Joseph Form CSS */
+.lostFormPicture {
+  margin: 2%;
+  padding: 2%;
+  background: black;
+  border: solid 4px #df8e23;
+  height: 100%;
+  width: 100%;
+}
 
+.top {
+  background-color: #df8e23;
+  border-top: solid 20px rgb(211, 130, 24);
+}
 
+.bottom {
+  background-color: #df8e23;
+  margin-top: 2%;
+  border-top: solid 20px rgb(211, 130, 24);
+  text-align: center;
+  font-size: 1rem;
+}
+
+form {
+    background: whitesmoke;
+}
+
+.resultsForm {
+  background: #f09c2e;
+}
+
+label {
+  font-size: 1rem;
+  padding: 10px 0px;
+}
+
+.formTitle {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  text-align: center;
+  background: rgb(255, 162, 39);
+  border: solid 1px black;
+}
+
+.submit {
+  width: 60%;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+.link {
+  font-size: 1.5rem;
+  margin-top: 8%;
+}
+
+.topnav {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 7%;
+  height: 100%;
+}
+
+.topnav:hover {
+  color: lightgreen;
+}
+
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+.step {
+  font-size: 4rem;
+}
+
+.lostLabel {
+  font-size: 2rem;
+}
+
+.resultsPage {
+  width: 80%;
+  margin: auto;
+  border: solid 5px  rgb(179, 114, 29);
+  padding: 1rem;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.inputDesign {
+  font-size: 2rem;
+}
+
+.lostLabel {
+    font-size: 3rem;
+}
+/*Custom Scroll */
+.main::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.main::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+.main::-webkit-scrollbar-thumb {
+  background: none;
+}
+
+/* Handle on hover */
+.main::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /*Zoom hover effect */
 .zoom {
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
-  }
-  
-  .zoom:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-  }
+  transition: transform 0.2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
 
 /* End zoom section */

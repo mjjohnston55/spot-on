@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     lost_date: { type: DataTypes.DATE },
     lost_where: { type: DataTypes.TEXT },
     still_lost: { type: DataTypes.BOOLEAN },
-    zip_code: { type:DataTypes.INTEGER, validate: {notEmpty: true}},
+    zip_code: { type:DataTypes.INTEGER },
     contact_email: { type: DataTypes.STRING, validate: {notEmpty: true}},
   });
   return lostAnimals;
