@@ -37,7 +37,7 @@ module.exports = function(app) {
   app.get("/Found_Animals/results", function(req,res){
     db.Found_Animals.findAll({
       where: {
-        zip_code: req.body.zip //Need to Work ON Query
+        zip_code: req.query.zip 
       }
     }).then(function(animalList) {
       res.render("foundresults", { animals : animalList });
@@ -47,7 +47,7 @@ module.exports = function(app) {
   app.get("/Lost_Animals/results", function(req,res){
     db.Found_Animals.findAll({
       where: {
-        zip_code: req.body.zip //Need to Work ON Query
+        zip_code: req.query.zip
       }
     }).then(function(animalList) {
       res.render("lostresults", { animals : animalList });
