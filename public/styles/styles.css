@@ -19,6 +19,11 @@ h1 {
   font-size: 3rem;
   line-height: 1.5;
   color: whitesmoke;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
 }
 h3 {
   font-family: "Montserrat";
@@ -29,11 +34,18 @@ h3 {
 }
 
 .navbar-brand {
-  font-family: "Ubuntu";
+  font-family: 'Chewy', cursive;
   font-weight: 200;
   font-size: 2rem;
   line-height: 1.5;
   color: whitesmoke;
+  font-size:260%;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+
 }
 .icon {
   color: #df8e23;
@@ -57,13 +69,20 @@ h3 {
 }
 
 /*Phils CSS */
+.animalName {
+  font-size:300%;
+  padding-left:50px;
+  font-family: 'Permanent Marker', cursive;
+}
+
 .petName {
   font-family: "McLaren", cursive;
 }
 
 li {
   list-style-type: none;
-  font-family: "Federo", sans-serif;
+  /* font-family: "Federo", sans-serif; */
+  font-family: 'Permanent Marker', cursive;
 }
 
 .petContainer {
@@ -93,7 +112,8 @@ li {
 }
 
 b {
-  font-family: "Fredericka the Great", cursive;
+  /* font-family: "Fredericka the Great", cursive; */
+  font-family: 'Permanent Marker', cursive;
   font-weight: lighter;
   font-size: 120%;
   color: #343a40;
@@ -232,6 +252,7 @@ a:focus {
   margin: auto;
   border: solid 5px  rgb(179, 114, 29);
   padding: 1rem;
+  font-family: 'Chewy', cursive;
 }
 
 .align {
