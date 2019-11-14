@@ -35,25 +35,54 @@ module.exports = function(app) {
   });
 
   app.get("/Found_Animals/results", function(req,res){
+    let condition = {};
+    if(req.query.name !== ""){
+      condition.animal_name = req.query.name
+    }
+    if(req.query.species !== ""){
+      condition.species = req.query.species
+    }
+    if(req.query.breed !== ""){
+      condition.breed = req.query.breed
+    }
+    if(req.query.color !== ""){
+      condition.color = req.query.color
+    }
+    if(req.query.zip !== ""){
+      condition.zip_code = req.query.zip
+    }
+    if(req.query.where !== ""){
+      condition.found_where = req.query.where
+    }
     db.Found_Animals.findAll({
-      where: {
-        zip_code: req.query.zip 
-      }
+      where: condition
     }).then(function(animalList) {
       res.render("foundresults", { animals : animalList });
     });
   });
 
   app.get("/Lost_Animals/results", function(req,res){
+    let condition = {};
+    if(req.query.name !== ""){
+      condition.animal_name = req.query.name
+    }
+    if(req.query.species !== ""){
+      condition.species = req.query.species
+    }
+    if(req.query.breed !== ""){
+      condition.breed = req.query.breed
+    }
+    if(req.query.color !== ""){
+      condition.color = req.query.color
+    }
+    if(req.query.zip !== ""){
+      condition.zip_code = req.query.zip
+    }
+    if(req.query.where !== ""){
+      condition.lost_where = req.query.where
+    }
     db.Lost_Animals.findAll({
-      where: {
-        animal_name: req.query.name,
-        species: req.query.species,
-        breed: req.query.breed,
-        color: req.query.color,
-        zip_code: req.query.zip,
-        lost_where: req.query.where
-      }
+      where: condition
     }).then(function(animalList) {
       res.render("lostresults", { animals : animalList });
     });

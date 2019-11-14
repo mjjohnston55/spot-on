@@ -8,7 +8,32 @@
         </button>
       </nav>
     </div>
-    <div class="col-md-2 offset-md-1">
+    <div class="col-md-2 offset-md-2">
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Our Animals
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundresults">View Lost Animals</a>
+           <a class="dropdown-item dropnav" href="/lostresults">View Found Animals</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+     <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report an Animal
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundForm">Report Found Animal</a>
+           <a class="dropdown-item dropnav" href="/lostForm">Report Lost Animal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="col-md-2 offset-md-1">
       <a href="/WhatWeDo">
         <h1 class="topnav">What We Do!</h1>
       </a>
@@ -40,9 +65,8 @@
     </div>
     <div class="col-md-1">
       <a class="nav-link link" href=""> Sign In</a>
-    </div>
-  </div>
-</div>
+</div> -->
+<!-- Found Animal Form -->
 
 <div class="container-fluid">
   <div class="row">
@@ -103,7 +127,7 @@
         </div>
       </form>
     </div>
-    <div class="col-md-6 text-center main">
+    <div class="col-md-6 main">
       <ul>
         <div class="col-md-12">
           <h1 align="center">Lost Pet Results</h1>
@@ -114,12 +138,13 @@
             <div class="col-md-1">
               <h6 class="petName">Name:</h6>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <h2> {{this.animal_name}}</h2>
               <hr>
+              <br>
               <img src="{{this.picture}}" alt="animal profile picture" class="petPic zoom"> </img>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-7 resultList">
               <li class="listTop"> <b>Species:</b> {{this.species}}</li>
               <li> <b>Breed:</b> {{this.breed}}</li>
               <li> <b>Color:</b> {{this.color}}</li>
