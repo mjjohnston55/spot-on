@@ -55,6 +55,24 @@ module.exports = function(app) {
     });
   });
 
+  app.post("/Found_Animals/create", function(req, res) {
+    db.Found_Animals.create({
+      animal_name: req.body.name,
+      species: req.body.species,
+      breed: req.body.breed,
+      picture: req.body.picture,
+      color: req.body.color,
+      animal_description: req.body.description,
+      found_date: req.body.date,
+      found_where: req.body.where,
+      zip_code: req.body.zip,
+      contact_email: req.body.email
+  }).then(function (reuslt) {
+      console.log(reuslt);
+      res.redirect("/");
+    });
+  });
+
   // Delete an example by id
   app.delete("/api/animals/:id", function(req, res) {
     db.Animals.destroy({ 

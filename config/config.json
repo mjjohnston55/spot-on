@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "root",
-    "password": "jad3fir3",
-    "database": "animals_db",
-    "host": "127.0.0.1",
+    "username": "fu7tbdcnecd99l1c",
+    "password": "gzrchm3sre2yn3b9",
+    "database": "ipx3lpidikijf355",
+    "host": "jsftj8ez0cevjz8v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "port": 3306,
     "dialect": "mysql"
   },
