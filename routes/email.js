@@ -12,7 +12,7 @@ module.exports = function(app){
   });
   let mailOptions = {
       from: 'spotsanimals@gmail.com',
-      to: 'Animals1!',
+      to: 'spotsanimals@gmail.com',
       subject: 'Test',
       text: 'Hello World!'
   };

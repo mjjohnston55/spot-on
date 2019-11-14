@@ -14,6 +14,8 @@ module.exports = function(app) {
     });
   });
 
+  
+
   app.get("/api/lost/:zipcode", function(req,res){
     db.Lost_Animals.findAll({
       where:{
