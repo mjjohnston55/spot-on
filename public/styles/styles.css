@@ -56,6 +56,9 @@ h3 {
 }
 #features {
   padding: 7.1% 15%;
+  background-image: url("https://media.giphy.com/media/VA4lWBPRhUlUI/giphy.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .feature-box {
