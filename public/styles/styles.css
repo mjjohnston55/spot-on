@@ -1,3 +1,4 @@
+
 body {
   background-image: url("./images/white2.jpg");
   -webkit-background-size: cover;
@@ -56,9 +57,13 @@ h3 {
 }
 #features {
   padding: 7.1% 15%;
-  background-image: url("https://media.giphy.com/media/VA4lWBPRhUlUI/giphy.gif");
+
+  background-image: url("https://media.giphy.com/media/VA4lWBPRhUlUI/giphy.gif"); 
   background-repeat: no-repeat;
   background-size: cover;
+
+  padding-bottom:350px;
+
 }
 
 .feature-box {
