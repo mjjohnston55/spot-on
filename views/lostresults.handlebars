@@ -1,0 +1,178 @@
+<div class="container-fluid top">
+  <div class="row">
+    <div class="col-md-2">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Spot On!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+    <div class="col-md-2 offset-md-2">
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Our Animals
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/lostresults">View Lost Animals</a>
+           <a class="dropdown-item dropnav" href="/foundresults">View Found Animals</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+     <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report an Animal
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundForm">Report Found Animal</a>
+           <a class="dropdown-item dropnav" href="/lostForm">Report Lost Animal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="col-md-2 offset-md-1">
+      <a href="/WhatWeDo">
+        <h1 class="topnav">What We Do!</h1>
+      </a>
+    </div>
+    <div class="col-md-2">
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Our Animals
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundresults">View Lost Animals</a>
+           <a class="dropdown-item dropnav" href="/lostresults">View Found Animals</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+     <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report an Animal
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundForm">Report Found Animal</a>
+           <a class="dropdown-item dropnav" href="/lostForm">Report Lost Animal</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 offset-md-1">
+      <a class="nav-link link" href="">Contact</a>
+    </div>
+    <div class="col-md-1">
+      <a class="nav-link link" href=""> Sign In</a>
+</div> -->
+<!-- Found Animal Form -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 align">
+      <form class="form-horizontal resultsPage resultsForm" method="GET" action="/Lost_Animals/results">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>Filter Your Search</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label lostLabel col-md-12">Animal Name:</label>
+            <div class="col-md-12">
+              <input type="text" class="form-control inputDesign" placeholder="Enter Name" name="name">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="control-label lostLabel col-md-12">Species:</label>
+            <div class="col-md-12">
+              <input type="text" class="form-control inputDesign" placeholder="Enter Species" name="species">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label lostLabel col-md-12">Breed:</label>
+            <div class="col-md-12">
+              <input type="text" class="form-control inputDesign" placeholder="Enter breed" name="breed">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="control-label lostLabel col-md-12">Color:</label>
+            <div class="col-md-12">
+              <input type="text" class="form-control inputDesign" placeholder="Enter color" name="color">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label class="control-label lostLabel col-md-12">Zip Code</label>
+            <div class="col-md-12">
+              <input type="text" class="form-control inputDesign" placeholder="Zip Code" name="zip">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label class="control-label lostLabel col-md-12">Lost Where</label>
+            <div class="col-md-12">
+              <input type="text" class="form-control inputDesign" placeholder="lost where" name="where">
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3 offset-md-9">
+            <button type="submit" class="btn btn-danger submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6 main">
+      <ul>
+        <div class="col-md-12">
+          <h1 align="center">Lost Pet Results</h1>
+        </div>
+        {{#each animals}}
+        <div class="petContainer">
+          <div class="row">
+            <div class="col-md-1">
+              <h6 class="petName">Name:</h6>
+            </div>
+            <div class="col-md-4">
+              <h2 class="animalName"> {{this.animal_name}}</h2>
+              <hr>
+              <br>
+              <img src="{{this.picture}}" alt="animal profile picture" class="petPic zoom"> </img>
+            </div>
+            <div class="col-md-7 resultList">
+              <li class="listTop"> <b>Species:</b> {{this.species}}</li>
+              <li> <b>Breed:</b> {{this.breed}}</li>
+              <li> <b>Color:</b> {{this.color}}</li>
+              <li> <b>Description:</b> {{this.animal_description}}</li>
+              <li> <b>Lost Date:</b> {{this.lost_date}}</li>
+              <li> <b>Where Lost:</b> {{this.lost_where}}</li>
+              <li> <b>Zip Code:</b> {{this.zip_code}}</li>
+              <li> <b>Contact Email:</b> {{this.contact_email}}</li>
+            </div>
+            <hr>
+          </div>
+        </div>
+        <br>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bottom">
+  <div class="row">
+    <div class="col-md-6 text-right">
+      <footer id="footer">
+        <p>© Copyright 2019 Spot On!</p>
+      </footer>
+    </div>
+    <div class="col-md-6 text-left">
+      <a href="https://github.com/mjjohnston55/Project2" id="repoLink">Github Repository</a>
+    </div>
+  </div>
+</div>

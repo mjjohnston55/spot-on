@@ -1,3 +1,352 @@
-.list-group-item {
-  line-height: 2.5;
+
+body {
+  background-image: url("./images/white2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
 }
+#title {
+  background-color: #df8e23;
+}
+
+.container-fluid1 {
+  padding: 3% 15%;
+}
+h1 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: whitesmoke;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.navbar-brand {
+  font-family: 'Chewy', cursive;
+  font-weight: 200;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: whitesmoke;
+  font-size:260%;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+
+}
+.icon {
+  color: #df8e23;
+  margin-bottom: 1rem;
+}
+.icon:hover {
+  color: #ff4c68;
+}
+#features {
+  padding: 7.1% 15%;
+
+  background-image: url("https://media.giphy.com/media/VA4lWBPRhUlUI/giphy.gif"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-bottom:350px;
+
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.white {
+  font-family: "Ubuntu";
+
+  color: grey;
+}
+
+/*Phils CSS */
+.animalName {
+  font-size:300%;
+  padding-left:50px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.petName {
+  font-family: "McLaren", cursive;
+}
+
+li {
+  list-style-type: none;
+  /* font-family: "Federo", sans-serif; */
+  font-family: 'Permanent Marker', cursive;
+}
+
+.petContainer {
+  border: 2px solid #343a40;
+  padding: 10px;
+  background-color: #df8e23;
+  color: white;
+  border-radius: 25px;
+}
+
+.resultsContainer {
+  background-color: #e1d1d1;
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.petPic {
+  width: 200px;
+  height: 200px;
+  border-radius: 25px;
+}
+
+.resultList {
+  font-size:150%;
+}
+
+b {
+  /* font-family: "Fredericka the Great", cursive; */
+  font-family: 'Permanent Marker', cursive;
+  font-weight: lighter;
+  font-size: 120%;
+  color: #343a40;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+.listTop {
+  padding-top: 10px;
+}
+.main {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.orange {
+  background-color: #df8e23;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/*Joseph Form CSS */
+.lostFormPicture {
+  margin: 2%;
+  padding: 2%;
+  background: black;
+  border: solid 4px #df8e23;
+  height: 100%;
+  width: 100%;
+}
+
+.top {
+  background-color: #df8e23;
+  border-top: solid 20px rgb(211, 130, 24);
+}
+
+.bottom {
+  background-color: #df8e23;
+  margin-top: 2%;
+  border-top: solid 20px rgb(211, 130, 24);
+  text-align: center;
+  font-size: 1rem;
+}
+.bottom404 {
+  position: absolute;
+  bottom: 0px;
+  background-color: #df8e23;
+  border-top: solid 20px rgb(211, 130, 24);
+  text-align: center;
+  font-size: 1rem;
+}
+
+form {
+    background: whitesmoke;
+}
+
+.resultsForm {
+  background: #f09c2e;
+}
+
+label {
+  font-size: 1rem;
+  padding: 10px 0px;
+}
+
+.formTitle {
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  text-align: center;
+  background: rgb(255, 162, 39);
+  border: solid 1px black;
+}
+
+.submit {
+  width: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 5%;
+}
+
+.link {
+  font-size: 1.5rem;
+  margin-top: 8%;
+}
+
+.topnav {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 7%;
+  height: 100%;
+}
+.dropnav {
+  font-size: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-bottom: 2%;
+}
+
+.dropnav:hover {
+  background:lightgreen;
+}
+
+.dropdown-menu.show {
+  margin-left: 2.5rem !important;
+}
+.dropdown-menu{
+  background: rgb(255, 162, 39);
+  padding: 1rem;
+}
+
+.topnav:hover{
+  color: lightgreen;
+}
+
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+.step {
+  font-size: 4rem;
+}
+
+.lostLabel {
+  font-size: 2rem;
+}
+
+.resultsPage {
+  width: 80%;
+  margin: auto;
+  border: solid 5px  rgb(179, 114, 29);
+  padding: 1rem;
+  font-family: 'Chewy', cursive;
+}
+
+.align {
+  display: flex;
+  align-items: center;
+}
+
+.inputDesign {
+  font-size: 2rem;
+}
+
+.lostLabel {
+    font-size: 3rem;
+}
+.foundPet {
+  font-size: 4rem;
+  color: orange;
+  width: 100%;
+  text-shadow: 2px 2px #ff0000;
+  margin-bottom: 2rem;
+}
+.foundPetLink {
+  font-size: 1.5rem;
+  background: rgb(243, 189, 118);
+  color: black;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+.catWhat {
+  border: 1px solid rgb(179, 114, 29);
+  padding: 8rem;
+  background-image: url("./images/catWhatWeDo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+.foundPetLink:hover {
+  color: lightgreen;
+}
+.dogWhat {
+  border: 1px solid rgb(179, 114, 29);
+  padding: 8rem;
+  background-image: url("./images/dogWhatWeDo.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:100%;
+}
+.error {
+  background: whitesmoke;
+  border: 1px solid black;
+  margin-top: 30%;
+}
+.errortext {
+  color: black;
+}
+/*Custom Scroll */
+.main::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.main::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+.main::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+.main::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*Zoom hover effect */
+.zoom {
+  transition: transform 0.2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* End zoom section */

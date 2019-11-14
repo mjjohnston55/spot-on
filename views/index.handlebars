@@ -1,33 +1,100 @@
-<div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
+<div class="container-fluid top">
+  <div class="row">
+    <div class="col-md-2">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Spot On!</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+    <div class="col-md-2 offset-md-2">
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Our Animals
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/lostresults">View Lost Animals</a>
+          <a class="dropdown-item dropnav" href="/foundresults">View Found Animals</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Report an Animal
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundForm">Report Found Animal</a>
+          <a class="dropdown-item dropnav" href="/lostForm">Report Lost Animal</a>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+<!-- <div class="col-md-2 offset-md-1">
+      <a href="/WhatWeDo">
+        <h1 class="topnav">What We Do!</h1>
+      </a>
+    </div>
+    <div class="col-md-2">
+      <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          View Our Animals
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundresults">View Lost Animals</a>
+           <a class="dropdown-item dropnav" href="/lostresults">View Found Animals</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+     <div class="dropdown show">
+        <h1 class="topnav dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Report an Animal
+        </h1>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item dropnav" href="/foundForm">Report Found Animal</a>
+           <a class="dropdown-item dropnav" href="/lostForm">Report Lost Animal</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-1 offset-md-1">
+      <a class="nav-link link" href="">Contact</a>
+    </div>
+    <div class="col-md-1">
+      <a class="nav-link link" href=""> Sign In</a>
+</div> -->
+<!-- Found Animal Form -->
+<!-- Features -->
+<section id="features">
+  <div class="row">
+    <div class="feature-box col-lg-4">
+      <center><i class="icon fas fa-check fa-4x"></i></center>
+      <h3>Easy to use.</h3>
+      <p class="white">So easy to use, even your dog could do it.</p>
+    </div>
+    <div class="feature-box col-lg-4">
+      <center> <i class="icon far fa-dot-circle fa-4x"></i></center>
+      <h3>Locate</h3>
+      <p class="white">Find out where your cat snuck off to.</p>
+    </div>
+    <div class="feature-box col-lg-4">
+      <center> <i class="icon fas fa-heart fa-4x"></i></center>
+      <h3>Reunite.</h3>
+      <p class="white">Dogs and cats are not our whole life, but they make our lives whole.</p>
+    </div>
+  </div>
+</section>
+<div class="container-fluid bottom404">
+  <div class="row">
+    <div class="col-md-6 text-right">
+      <footer id="footer">
+        <p>© Copyright 2019 Spot On!</p>
+      </footer>
+    </div>
+    <div class="col-md-6 text-left">
+      <a href="https://github.com/mjjohnston55/Project2" id="repoLink">Github Repository</a>
+    </div>
+  </div>
+</div>
