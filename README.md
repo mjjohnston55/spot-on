@@ -112,7 +112,7 @@ MySQL           |  Node.js |  Sequelize  |  Handlebars.js
 <ul style="font-size: 20px;">
   <li><a href="https://github.com/PhillipLaub">Github</a></li>
   <li><a href="https://www.linkedin.com/in/phillip-laub-642925115/">Linkedin</a></li>
-  <li><a href="https://philliplaub.github.io/Responsive-Portfolio/portfolio.html">Portfolio</a></li>
+  <li><a href="https://philliplaub.github.io/Portfolio/portfolio.html">Portfolio</a></li>
 </ul>
 
 #### Michael Johnston
